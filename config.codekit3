@@ -17,30 +17,6 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
-    "\/assets\/fonts\/GmarketSansTTFBold.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/GmarketSansTTFBold.ttf",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/GmarketSansTTFLight.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/GmarketSansTTFLight.ttf",
-      "oF" : 0
-    },
-    "\/assets\/fonts\/GmarketSansTTFMedium.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/fonts\/GmarketSansTTFMedium.ttf",
-      "oF" : 0
-    },
     "\/assets\/fonts\/MalgunGothic.eot" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3218,7 +3194,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-기아.png" : {
+    "\/images\/brand-기아.png" : {
       "ft" : 32768,
       "iS" : 1752,
       "oA" : 0,
@@ -3231,7 +3207,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-기타.png" : {
+    "\/images\/brand-기타.png" : {
       "ft" : 32768,
       "iS" : 339,
       "oA" : 0,
@@ -3244,7 +3220,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-도요타.png" : {
+    "\/images\/brand-도요타.png" : {
       "ft" : 32768,
       "iS" : 1844,
       "oA" : 0,
@@ -3257,7 +3233,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-렉서스.png" : {
+    "\/images\/brand-렉서스.png" : {
       "ft" : 32768,
       "iS" : 1690,
       "oA" : 0,
@@ -3270,7 +3246,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-르노삼성.png" : {
+    "\/images\/brand-르노삼성.png" : {
       "ft" : 32768,
       "iS" : 2550,
       "oA" : 0,
@@ -3283,7 +3259,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-벤츠.png" : {
+    "\/images\/brand-벤츠.png" : {
       "ft" : 32768,
       "iS" : 2127,
       "oA" : 0,
@@ -3296,7 +3272,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-쉐보레.png" : {
+    "\/images\/brand-쉐보레.png" : {
       "ft" : 32768,
       "iS" : 2121,
       "oA" : 0,
@@ -3309,7 +3285,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-쌍용.png" : {
+    "\/images\/brand-쌍용.png" : {
       "ft" : 32768,
       "iS" : 2780,
       "oA" : 0,
@@ -3322,7 +3298,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-아우디.png" : {
+    "\/images\/brand-아우디.png" : {
       "ft" : 32768,
       "iS" : 2263,
       "oA" : 0,
@@ -3335,7 +3311,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-제네시스.png" : {
+    "\/images\/brand-제네시스.png" : {
       "ft" : 32768,
       "iS" : 2526,
       "oA" : 0,
@@ -3348,7 +3324,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-폭스바겐.png" : {
+    "\/images\/brand-폭스바겐.png" : {
       "ft" : 32768,
       "iS" : 2272,
       "oA" : 0,
@@ -3361,7 +3337,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/images\/brand-현대.png" : {
+    "\/images\/brand-현대.png" : {
       "ft" : 32768,
       "iS" : 2290,
       "oA" : 0,
