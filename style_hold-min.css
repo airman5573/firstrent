@@ -4519,7 +4519,7 @@ body > .wrapper > .main {
 }
 .consult-tabs .tab-content .label-highlight {
   font-size: 14px;
-  color: #ff7d14;
+  color: black;
   font-weight: 600;
 }
 .consult-tabs .tab-content.active {
@@ -5167,5 +5167,3 @@ body > .wrapper > .main {
     font-size: 22px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

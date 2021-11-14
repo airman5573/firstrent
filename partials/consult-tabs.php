@@ -20,17 +20,17 @@
           <input type="hidden" name="action" value="firstrent_process_ajax_form_consult_rent_lease" />
           <input type="hidden" name="consult_type" value="consult_rent_lease" />
           <div class="mb-3">
-            <label for="consult_name" class="label-highlight">* 이름</label>
+            <label for="consult_name" class="label-highlight">* 이름 (필수)</label>
             <input id="consult-name" type="text" class="form-control" name="consult_name" placeholder="이름을 입력해주세요" required/>
             <div class="invalid-feedback">이름을 입력해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-phone-number" class="label-highlight">* 전화번호</label>
+            <label for="consult-phone-number" class="label-highlight">* 전화번호 (필수)</label>
             <input id="consult-phone-number" type="text" class="form-control phone-number" name="consult_phone_number" placeholder="전화번호를 입력해주세요" required/>
             <div class="invalid-feedback">올바른 전화번호를 입력해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-location" class="label-highlight">* 지역</label>
+            <label for="consult-location">지역</label>
             <select id="consult-location" class="form-select" name="consult_location" required>
               <option selected disabled value="">지역을 선택해주세요</option>
               <option value="서울">서울</option>
@@ -53,7 +53,7 @@
             <div class="invalid-feedback">지역을 선택해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-estimated-rental-fee" class="label-highlight">* 예상렌트료</label>
+            <label for="consult-estimated-rental-fee">예상렌트료</label>
             <select id="consult-estimated-rental-fee" class="form-select" name="consult_estimated_rental_fee" required>
               <option selected disabled value="">예상렌트료를 선택해주세요</option>
               <option value="m35">35만원 미만</option>
