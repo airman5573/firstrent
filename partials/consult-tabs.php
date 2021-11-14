@@ -175,8 +175,8 @@
             <div class="invalid-feedback">올바른 전화번호를 입력해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-location" class="label-highlight">* 지역</label>
-            <select id="consult-location" class="form-select" name="consult_location" required>
+            <label for="consult-location">* 지역</label>
+            <select id="consult-location" class="form-select" name="consult_location">
               <option selected disabled value="">지역을 선택해주세요</option>
               <option value="서울">서울</option>
               <option value="경기">경기</option>
