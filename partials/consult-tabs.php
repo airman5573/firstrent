@@ -165,12 +165,12 @@
           <input type="hidden" name="action" value="firstrent_process_ajax_form_consult_electric" />
           <input type="hidden" name="consult_type" value="consult_electric" />
           <div class="mb-3">
-            <label for="consult_name" class="label-highlight">* 이름</label>
+            <label for="consult_name" class="label-highlight">* 이름 (필수)</label>
             <input id="consult-name" type="text" class="form-control" name="consult_name" placeholder="이름을 입력해주세요" required/>
             <div class="invalid-feedback">이름을 입력해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-phone-number" class="label-highlight">* 전화번호</label>
+            <label for="consult-phone-number" class="label-highlight">* 전화번호 (필수)</label>
             <input id="consult-phone-number" type="text" class="form-control phone-number" name="consult_phone_number" placeholder="전화번호를 입력해주세요" required/>
             <div class="invalid-feedback">올바른 전화번호를 입력해주세요</div>
           </div>
@@ -234,12 +234,12 @@
           <input type="hidden" name="action" value="firstrent_process_ajax_form_consult_tax" />
           <input type="hidden" name="consult_type" value="consult_tax" />
           <div class="mb-3">
-            <label for="consult_name" class="label-highlight">* 이름</label>
+            <label for="consult_name" class="label-highlight">* 이름 (필수)</label>
             <input id="consult-name" type="text" class="form-control" name="consult_name" placeholder="이름을 입력해주세요" required/>
             <div class="invalid-feedback">이름을 입력해주세요</div>
           </div>
           <div class="mb-3">
-            <label for="consult-phone-number" class="label-highlight">* 전화번호</label>
+            <label for="consult-phone-number" class="label-highlight">* 전화번호 (필수)</label>
             <input id="consult-phone-number" type="text" class="form-control phone-number" name="consult_phone_number" placeholder="전화번호를 입력해주세요" required/>
             <div class="invalid-feedback">올바른 전화번호를 입력해주세요</div>
           </div>
