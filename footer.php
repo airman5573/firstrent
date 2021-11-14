@@ -1,18 +1,19 @@
-    </div> <!-- .wrapper -->
-  </div> <!-- #content -->
-
-  <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
+  
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
                 주소 : 서울특별시 동대문구 장한로17길 13-10 선빌딩 502호 / 회사명 : 퍼스트렌트 / 사업자등록번호 : 204-28-59539 / 대표전화 : 1800-1489 / 팩스 : 02-6008-1489<br>
                 Copyright © First Rent All rights reserved.
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-  </div> <!-- .footer -->
+      </div> 
+    </div><!-- wrapper -->
+  </div><!-- content -->
+</div><!-- wrapper -->
 <?php wp_footer(); ?>
-</div> <!-- .wrapper -->
 
 <!-- 이용약관 Modal -->
 <?php get_template_part('partials/ppa-modal'); ?>
@@ -37,5 +38,31 @@ if (window.wcs) {
 }
 </script>
 <!-- NAVER SCRIPT END -->
+
+<div class="kakao-desktop">
+  <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko">
+    <img src="http://firstrent.kr//wp-content/uploads/2021/11/kakao-logo.png" alt="">
+  </a>
+</div>
+
+<div class="phone-kakao-mobile">
+  <div class="phone">
+    <a href="" target="_blank">
+      <img src="http://firstrent.kr//wp-content/uploads/2021/11/icon-phone.png" alt="">
+      <em>
+        전화상담
+      </em>
+    </a>
+  </div>
+  <div class="kakao">
+    <a href="" target="_blank">
+      <img src="http://firstrent.kr//wp-content/uploads/2021/11/icon-kakao.png" alt="">
+      <em>
+        카카오톡 상담
+      </em>
+    </a>
+  </div>
+</div>
+
 </body>
 </html>

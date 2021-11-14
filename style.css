@@ -3518,6 +3518,7 @@ body {
 }
 
 body > .wrapper {
+  position: relative;
   background-color: white;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -4911,6 +4912,68 @@ body > .wrapper > .main {
   color: white;
 }
 
+.kakao-desktop {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  background-color: green;
+  z-index: 10001;
+}
+.kakao-desktop a {
+  display: block;
+  width: 100px;
+}
+.kakao-desktop a img {
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .kakao-desktop {
+    display: none;
+  }
+}
+
+.phone-kakao-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: #ff7d14;
+}
+.phone-kakao-mobile > div {
+  flex: 1;
+}
+.phone-kakao-mobile img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.phone-kakao-mobile .kakao {
+  background: #ff9f41;
+}
+.phone-kakao-mobile a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.phone-kakao-mobile em {
+  color: #fff;
+  font-family: GmarketSans;
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: -1px;
+  font-style: normal;
+}
+@media (max-width: 991.98px) {
+  .phone-kakao-mobile {
+    display: flex;
+  }
+}
+
 #masthead {
   position: relative;
   z-index: 100;
@@ -4922,6 +4985,7 @@ body > .wrapper > .main {
   font-size: 12px;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
 }

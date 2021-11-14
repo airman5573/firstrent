@@ -5,6 +5,7 @@ body {
 }
 
 body > .wrapper {
+  position: relative;
   background-color: white;
   border-left: 1px solid $color-border-gray;
   border-right: 1px solid $color-border-gray;

@@ -1,0 +1,59 @@
+.kakao-desktop {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  background-color: green;
+  z-index: 10001;
+  a {
+    display: block;
+    width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+  // Responsive
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.phone-kakao-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  & > div {
+    flex: 1;
+  }
+  img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .kakao {
+    background: #ff9f41;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  em {
+    color: #fff;
+    font-family: GmarketSans;
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: -1px;
+    font-style: normal;
+  }
+  background-color: $color-main-orange;
+  // Responsive
+  @include media-breakpoint-down(lg) {
+    display: flex;
+  }
+}
