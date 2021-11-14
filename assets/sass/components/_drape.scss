@@ -1,0 +1,62 @@
+// 기본이 닫혀있는 상태임
+.drape-container {
+  position: relative;
+  z-index: 10;
+  .drape {
+    display: none;
+    & > .wrapper {
+      display: flex;
+      width: 100%;
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      & > .left {
+        flex-basis: 75%;
+      }
+      & > .right {
+        flex-basis: 25%;
+      }
+    }
+  }
+  .handle {
+    height: 4px;
+    background-color: $color-main-orange;
+    position: relative;
+    .handle__btn {
+      width: 56px;
+      height: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $color-main-orange;
+      @include center-child();
+      @include border-bottom-radius(6px);
+      i {
+        font-size: 22px;
+        color: white;
+        &.fa-angle-up { display: none; }
+      }
+    }
+  }
+  
+  // Responsive
+  @include media-breakpoint-down(lg) {
+    .car-price-tab { border: none; }
+    .drape > .wrapper {
+      display: block;
+    }
+    .drape > .wrapper > .right {
+      border-top: 1px solid $color-border-gray;
+    }
+  }
+
+  // Front Page에서만 열려있음
+  // Hidden
+  &.open {
+    .drape { display: block; }
+    .handle .handle__btn i {
+      &.fa-angle-up { display: block; }
+      &.fa-angle-down { display: none; }
+    }
+  }
+}

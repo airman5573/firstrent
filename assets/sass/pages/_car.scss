@@ -1,0 +1,21 @@
+.single-car {
+  .title {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $color-border-gray;
+    &__main {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+    &__sub {
+      line-height: 1.6;
+    }
+  }
+  .btn-list {
+    .btn-default {
+      border-color: #ccc;
+      color: #333;
+      background-color: #fff;
+    }
+  }
+}

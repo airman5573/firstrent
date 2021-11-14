@@ -1,0 +1,54 @@
+#ppa-modal {
+  padding: 0;
+  max-width: map-get($grid-breakpoints, 'xl') * 0.8;
+  box-shadow: none;
+  border-radius: 0;
+  & > .close-modal { display: none !important; }
+  .modal-title {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-title-background;
+    border-bottom: 1px solid $color-border-gray;
+    align-items: center;
+    a {
+      text-decoration: none;
+      span {
+        font-family: sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .2;
+      }
+    }
+  }
+  .modal-content {
+    padding: 40px;
+  }
+
+  // responsive
+  @include media-breakpoint-down(lg) { max-width: map-get($grid-breakpoints, 'lg') * 0.8; }
+  @include media-breakpoint-down(md) { max-width: map-get($grid-breakpoints, 'md') * 0.8; }
+  @include media-breakpoint-down(sm) {
+    .modal-title h2 {
+      font-size: 24px;
+    }
+    .modal-content { 
+      padding: 20px;
+      max-height: 340px;
+      overflow: scroll;
+    }
+    max-width: map-get($grid-breakpoints, 'sm');
+  }
+}
+.jquery-modal.blocker {
+  background-color: rgba(0, 0, 0, 0.6);
+  @include media-breakpoint-down(sm) {
+    padding: 4px;
+  }
+}

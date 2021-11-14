@@ -1,0 +1,27 @@
+.sidebar {
+  .left-item {
+    height: 208px;
+    @include center-child();
+    a {
+      display: block;
+    }
+  }
+  .left-item:last-child {
+    height: 250px;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.home .sidebar {
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    .left-item {
+      height: auto;
+      a { width: 80%; }
+      img { width: 100%; height: auto; }
+    }
+  }
+}

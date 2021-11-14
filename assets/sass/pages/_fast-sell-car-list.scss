@@ -1,0 +1,81 @@
+.fast-sell-car-list {
+  .main-image {
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+  .car-item > .wrapper {
+    color: black;
+    padding: 20px;
+    img { width: 100%; }
+    & > .top {
+      display: flex;
+      & > .left {
+        flex: 1;
+        .title { font-size: 30px; }
+        .sub-info { font-size: 18px; }
+        .price {
+          font-size: 40px;
+          color: #2e4656;
+          font-weight: 600;
+          padding-bottom: 20px;
+          span { font-size: 26px; }
+        }
+        a {
+          display: block;
+          max-width: 240px;
+        }
+      }
+      & > .right {}
+    }
+    & > .bottom {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2e4656;
+    }
+
+
+    // responsive
+    @include media-breakpoint-down(xl) {
+      & > .top > .left {
+        .title { font-size: 26px; }
+        .sub-info { font-size: 16px; }
+        .price { 
+          font-size: 32px;
+          span { font-size: 22px; }
+        }
+        a { max-width: 200px; }
+      }
+      & > .top > .right { max-width: 300px; }
+    }
+    @include media-breakpoint-down(md) {
+      padding: 10px;
+      & > .top > .left {
+        .title { font-size: 22px; }
+        .sub-info { font-size: 12px; }
+        .price { 
+          font-size: 26px;
+          padding-bottom: 10px;
+          span { font-size: 16px; }
+        }
+        a { max-width: 160px; }
+      }
+      & > .bottom { font-size: 14px; }
+      & > .top > .right { max-width: 240px; }
+    }
+    @include media-breakpoint-down(sm) {
+      & > .top > .left {
+        .title { font-size: 20px; }
+        .sub-info { font-size: 12px; }
+        .price { 
+          font-size: 24px;
+          padding-bottom: 10px;
+          span { font-size: 14px; }
+        }
+        a { max-width: 120px; }
+      }
+      & > .top > .right { max-width: 200px; }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.car-badge {
+  display: inline;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-size: 11px;
+  padding: .1em .4em .1em;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  &.best { background-color: #9936ff; }
+  &.hot { background-color: #d9534f; }
+  &.limit { background-color: #5cb85c; }
+  &.new { background-color: #428bca; }
+  &.sale { background-color: #ff0000; }
+  &.recommend { background-color: #02bebc; }
+  &.special-sale { background-color: #f0ad4e; }
+}

@@ -1,0 +1,12 @@
+.main > .content {
+  & > .left {}
+  & > .right {
+    & > .top {
+      & > .main-slider {}
+      & > .side-slider {}
+    }
+    & > .bottom {
+
+    }
+  }
+}

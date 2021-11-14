@@ -1,0 +1,71 @@
+$filter-height: 60px;
+.car-list-filter {
+  .filter-madein { margin-bottom: 20px; }
+  .filter-main {
+    color: black;
+    margin-bottom: 40px;
+    b { font-size: 120%; }
+    h3 {
+      text-align: center;
+      line-height: $filter-height;
+      color: white;
+      font-weight: 600;
+      background-color: #5a4f49;
+    }
+    img {
+      max-width: 60px;
+      height: auto;
+    }
+    li {
+      @include center-child();
+      @include same-width();
+      height: $filter-height;
+      cursor: pointer;
+      border-left: 1px solid $color-border-gray;
+      border-bottom: 1px solid $color-border-gray;
+      background-color: #f5f6f6;
+      font-size: 14px;
+      &.active {
+        border: 1px solid #000;
+        background-color: #d9edf7;
+        border-radius: 5px;
+      }
+    }
+    ul {
+      @include reset-ul();
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .filter-brand, .filter-price {
+      display: flex;
+      & > h3 { width: 120px; }
+      & > ul { flex-grow: 1; }
+    }
+
+    // responsive
+    @include media-breakpoint-down(md) {
+      .filter-brand, .filter-price {
+        display: block;
+        h3 { width: 100%; }
+        li { flex-basis: calc(100%/3); }
+      }
+    }
+  }
+}
+
+// 수입차는 다르게 스타일을 적용한다
+.car-list.imported .filter-main .filter-brand {
+  display: block;
+  h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: $filter-height;
+  }
+  ul li {
+    flex-basis: calc(100%/6);
+    @include media-breakpoint-down(md) {
+      flex-basis: calc(100%/3);
+    }
+  }
+}

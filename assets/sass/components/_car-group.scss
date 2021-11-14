@@ -1,0 +1,103 @@
+.car-group {
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  &__title {
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 2px solid black;
+  }
+  & > ul {
+    @include reset-ul();
+    margin-bottom: 30px;
+    & > .car-list-item > .inner {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $color-border-gray;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      & > .left {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        .car-info {
+          flex-grow: 1;
+          padding-left: 20px;
+          & > .top {
+            display: flex;
+            align-items: center;
+            .car-name {
+              font-size: 16px;
+              font-weight: 700;
+              color: black;
+              padding-right: 8px;
+            }
+            .car-brand {
+              font-size: 90%;
+              padding-right: 10px;
+            }
+            .car-badges {
+              display: flex;
+              align-items: center;
+              .car-badge {
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+      }
+      & > .right {
+        display: flex;
+        align-items: center;
+        .car-rental-price,
+        .car-lease-price, {
+          font-size: 20px;
+          font-weight: 600;
+          padding-right: 20px;
+          text-align: right;
+          span {
+            color: $color-sub-gray;
+            font-size: 14px;
+            font-weight: normal;
+            padding-left: 2px;
+          }
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+
+    // responsive
+    @include media-breakpoint-down(lg) {
+      & > .car-list-item > .inner >.left > .car-info > .top { display: block; }
+    }
+    @include media-breakpoint-down(sm) {
+      & > .car-list-item > .inner {
+        display: block;
+        & > .left .car-info {
+          .bottom span {
+            display: block;
+          }
+          .bottom > .car-brand {
+            display: none;
+          }
+        }
+        & > .right {
+          justify-content: flex-end;
+          .price-group {
+            padding-right: 12px;
+            .car-rental-price,
+            .car-lease-price {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

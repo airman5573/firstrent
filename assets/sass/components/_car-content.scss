@@ -1,0 +1,109 @@
+.car-content {
+  .info {
+    .car-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #000;
+      small {
+        color: $color_tapa_approx;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    ul {
+      font-size: 16px;
+      li {
+        margin-bottom: 6px;
+      }
+      margin-bottom: 20px;
+    }
+    .row {
+      & > div:nth-child(2) {
+        padding-left: 20px;
+      }
+    }
+    .car-price {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid $color-border-gray;
+      align-items: center;
+      margin-bottom: 20px;
+      span {
+        font-size: 15px;
+        color: #000;
+        font-weight: normal;
+      }
+      h2 {
+        font-weight: bold;
+        color: $color-main-red;
+        font-size: 28px;
+      }
+      .price-group {
+        text-align: right;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 10px;
+      }
+    }
+    .car-class-with-price-options {
+      margin-bottom: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+      table {
+        width: 100%;
+        font-size: 16px;
+        th:nth-child(1) { width: 50%; }
+        th:nth-child(2) { width: 30%; }
+        th:nth-child(3) { width: 20%; }
+
+        tr {
+          border-bottom: 1px solid $color-border-gray;
+        }
+
+        tr:nth-child(1) {
+          border-top: 2px solid black;
+          border-bottom: 1px dashed $color-border-gray;
+          text-align: center;
+          color: black;
+        }
+        tr {
+          td:not(:first-child) {
+            text-align: center;
+          }
+          td:nth-child(2) {
+            font-weight: 800;
+          }
+        }
+
+        th,td {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          word-break: keep-all;
+        }
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      img { width: 100%; }
+    }
+    @include media-breakpoint-down(md) {
+      img { 
+        width: 100%;
+        height: auto;
+      }
+      .row > div:nth-child(2) { padding-left: 20px; padding-right: 20px; }
+      .car-class-with-price-options table {
+        th:nth-child(1) { width: 50%; }
+        th:nth-child(2) { width: 25%; }
+        th:nth-child(3) { width: 25%; }
+
+        tbody tr { font-size: 90%; }
+      }
+      .car-price .price-group h2 {
+        font-size: 24px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      // img { width: 100%; }
+    }
+  }
+}

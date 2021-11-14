@@ -1,0 +1,107 @@
+.car-price-tab {
+  border-right: 1px solid $color-border-gray;
+  .car-price-tab__title {
+    color: $color_dove_gray_approx;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+  }
+  .car-price-tab__content {
+    .tabs {
+      display: flex;
+      .left { flex-grow: 1; }
+      .right { 
+        flex-basis: 8%;
+        min-width: 60px;
+      }
+
+      // responsive
+      // @include media-breakpoint-down(sm) {
+      //   display: block;
+      // }
+    }
+  }
+  .filter {
+    @include reset-ul();
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $color-border-gray;
+    li {
+      flex-basis: 16.66%;
+      height: 36px;
+      border-top: 3px solid #dbdbdb;
+      padding-top: 7px;
+      margin-bottom: 2px;
+      line-height: 18px;
+      text-align: center;
+      font-size: 15px;
+      color: #bfbfbf;
+      cursor: pointer;
+      display: block;
+      &.on {
+        color: $color_main_red;
+        border-top-color: $color_main_orange;
+      }
+    }
+  }
+  .tabs {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    .tab {
+      flex-grow: 1;
+      padding: 20px;
+      display: none;
+      font-size: 90%;
+      flex-wrap: wrap;
+      &.on { display: flex; }
+      &__item {
+        text-align: center;
+        flex-basis: 25%;
+        .top {
+          padding-bottom: 10px;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+      .tab__car-price {
+        color: $color_main_red;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+  .more {
+    @include center-child();
+    height: 100%;
+    line-height: 100%;
+    border-left: 1px solid $color-border-gray;
+    border-top: 1px solid $color-border-gray;
+    background-color: $color_wild_sand_approx;
+    cursor: pointer;
+  }
+
+  // responsive
+  .filter {
+    li {
+      @include media-breakpoint-down(md) {
+        flex-basis: 33.333%;
+      }
+    }
+  }
+  .tabs .tab {
+    .tab__item {
+      @include media-breakpoint-down(md) {
+        flex-basis: 50%;
+      }
+      @include media-breakpoint-down(sm) {
+        img { width: 110px; height: auto; }
+        & > a > .bottom { display: block; }
+      }
+    }
+  }
+}

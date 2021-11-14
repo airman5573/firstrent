@@ -1,0 +1,7 @@
+.board-message {
+  margin-top: 20px;
+  margin-bottom: 40px; 
+  @include media-breakpoint-down(md) {
+    h2 { font-size: 22px; }
+  }
+}

@@ -1,0 +1,60 @@
+.consult-simple-form {
+  background-color: $color_romance_approx;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  
+  // common
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  label { width: 100%; }
+  input {
+    border: 1px solid $color-border-gray;
+  }
+
+  &__title {
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: $color_main_red;
+    span {
+      font-weight: normal;
+      margin-left: 15px;
+      padding-left: 15px;
+      font-size: 13px;
+      white-space: nowrap;
+      color: $color_main_orange;
+      i {
+        font-size: 10px;
+      }
+    }
+  }
+  &__content form {
+    & > div { margin-bottom: 2px; }
+    .privacy-policy-agreement { justify-content: space-between; }
+  }
+
+  // Responsive
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 20px;
+  }
+  .consult-form__title {
+    @include media-breakpoint-down(xl) {
+      font-size: 16px;
+    }
+    span {
+      @include media-breakpoint-down(xl) {
+        padding: 0;
+      }
+    }
+  }
+  &__content form .privacy-policy-agreement {
+    @include media-breakpoint-down(lg) {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+}

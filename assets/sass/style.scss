@@ -1,0 +1,86 @@
+/*
+Theme Name: FirstRent
+Theme URI: https://kmong.com/@%EC%9C%A4%EB%B3%91%EC%9D%B8
+Author: airman5573
+Author URI: develoger.kr
+Description: firstrent전용 테마입니다
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: firstrent
+*/
+
+
+/* Bootstrap 준비
+/*********************/
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "vendors/bootstrap/functions";
+
+// 2. Include any default variable overrides here
+@import "abstracts/variables";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+@import "vendors/bootstrap/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "vendors/bootstrap/reboot";
+@import "vendors/bootstrap/type";
+@import "vendors/bootstrap/containers";
+@import "vendors/bootstrap/grid";
+@import "vendors/bootstrap/helpers";
+@import "vendors/bootstrap/forms";
+@import "vendors/bootstrap/buttons";
+
+
+/* 내 SCSS
+/*********************/
+
+// Abstracts
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// Base
+@import "base/typography";
+@import "base/global";
+
+// Utils
+@import "utils/visible";
+
+// Component
+@import "components/main-nav";
+@import "components/buttons";
+@import "components/consult-bar";
+@import "components/drape";
+@import "components/car-price-tab";
+@import "components/consult-simple-form";
+@import "components/sidebar";
+@import "components/main-slider";
+@import "components/consult-slider";
+@import "components/box-title";
+@import "components/review-board";
+@import "components/car-content";
+@import "components/consult-tabs";
+@import "components/car-badge";
+@import "components/car-group";
+@import "components/tab-links";
+@import "components/car-list";
+@import "components/car-list-filter";
+@import "components/kboard-gallery";
+@import "components/ppa-modal";
+@import "components/ppa-checkbox";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/sidebar";
+
+// Page
+@import "pages/home";
+@import "pages/car";
+@import "pages/special-sale-car";
+@import "pages/fast-sell-car-list";
+@import "pages/review";

@@ -1,0 +1,27 @@
+.consult-tabs {
+  margin-top: 40px;
+  .title {
+    margin-bottom: 60px;
+    &__main {
+      margin-bottom: 20px;
+    }
+  }
+  .tab-content {
+    display: none;
+    .label-highlight {
+      font-size: 14px;
+      color: black;
+      font-weight: 600;
+    }
+    &.active {
+      display: block;
+    }
+    &.rent { }
+    .privacy-policy-agreement { 
+      position: relative;
+      .invalid-feedback { 
+        position: absolute;
+      }
+    }
+  }
+}

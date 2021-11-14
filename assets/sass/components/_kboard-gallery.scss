@@ -1,0 +1,16 @@
+.kboard-gallery {
+  ul {
+    @include reset-ul();
+    li {
+      a { display: block; text-decoration: none; text-align: center; }
+      .thumbnail-container { padding-bottom: 10px; }
+      img { width: 100%; }
+      .bottom { transition: color 0.35s ease; }
+      &:hover {
+        .bottom {
+          color: $color-main-orange;
+        }
+      }
+    }
+  }
+}

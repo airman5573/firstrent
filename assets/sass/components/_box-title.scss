@@ -1,0 +1,26 @@
+.box-title {
+  background: $color_alabaster_approx;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid $color-border-gray;
+  .more {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eaeaea;
+    float: right;
+    margin-top: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+
+    i {
+      font-size: 14px;
+      display: block;
+      line-height: 25px;
+      color: #bdbdbd;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.visible-xl {
+  display: none !important;
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-lg {
+  display: none !important;
+  @include media-breakpoint-between(lg, xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-md {
+  display: none !important;
+  @include media-breakpoint-between(md, lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-sm {
+  display: none !important;
+  @include media-breakpoint-between(sm, md) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-xs {
+  display: none !important;
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-upper-sm {
+  display: none !important;
+  @include media-breakpoint-up(sm) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-upper-md {
+  display: none !important;
+  @include media-breakpoint-up(md) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-upper-lg {
+  display: none !important;
+  @include media-breakpoint-up(lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-upper-xl {
+  display: none !important;
+  @include media-breakpoint-up(xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-under-sm {
+  display: none !important;
+  @include media-breakpoint-down(sm) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-under-md {
+  display: none !important;
+  @include media-breakpoint-down(md) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-under-lg {
+  display: none !important;
+  @include media-breakpoint-down(lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-under-xl {
+  display: none !important;
+  @include media-breakpoint-down(xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-xs-sm {
+  display: none !important;
+  @include media-breakpoint-between(xs, sm) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-xs-md {
+  display: none !important;
+  @include media-breakpoint-between(xs, md) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-xs-lg {
+  display: none !important;
+  @include media-breakpoint-between(xs, lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-xs-xl {
+  display: none !important;
+  @include media-breakpoint-between(xs, xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-sm-md {
+  display: none !important;
+  @include media-breakpoint-between(sm, md) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-sm-lg {
+  display: none !important;
+  @include media-breakpoint-between(sm, lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-sm-xl {
+  display: none !important;
+  @include media-breakpoint-between(sm, xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-md-lg {
+  display: none !important;
+  @include media-breakpoint-between(md, lg) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-md-xl {
+  display: none !important;
+  @include media-breakpoint-between(md, xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}
+.visible-between-lg-xl {
+  display: none !important;
+  @include media-breakpoint-between(lg, xl) {
+    display: block !important;
+    &.df {
+      display: flex !important;
+    }
+  }
+}

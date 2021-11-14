@@ -1,0 +1,22 @@
+.main-slider {
+  .swiper-pagination-bullet {
+    width: 21px;
+    height: 21px;
+    background: url(assets/images/main-slider/banner_off.png) no-repeat center;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border-radius: 0;
+    opacity: 1;
+    &.swiper-pagination-bullet-active {
+      width: 53px;
+      height: 21px;
+      background: url(assets/images/main-slider/banner_on.png) no-repeat center;
+    }
+  }
+
+  // responsive
+  @include media-breakpoint-down(md) {
+    img { width: 100%; }
+  }
+}

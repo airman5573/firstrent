@@ -1,0 +1,114 @@
+.main-nav {
+  // Common
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  // Responsive logo
+  .mobile-logo {
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      display: block;
+      a {
+        padding-bottom: 4px;
+        padding-top: 4px;
+      }
+      img {
+        height: 60px;
+      }
+    }
+    a {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+    }
+  }
+  .menu .menu__item {
+    flex-basis: 20%;
+    @include media-breakpoint-down(md) {
+      flex-basis: 25%;
+    }
+  }
+  .menu .menu__item:last-child {
+    a {
+      color: $color-main-red !important;
+    }
+    img {
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  // Responsive menu
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-top: 1px solid $color-border-gray;
+    border-bottom: 1px solid $color-border-gray;
+    .menu__item {
+      text-align: center;
+      border-right: 1px solid $color-border-gray;
+    }
+    .menu__item a {
+      font-size: 23px;
+      font-weight: bold;
+      line-height: 78px;
+      padding: 0;
+      color: #222;
+      width: 100%;
+      height: 100%;
+      @include media-breakpoint-down(lg) {
+        line-height: 68px;
+        font-size: 18px;
+      }
+      @include media-breakpoint-down(sm) {
+        line-height: 60px;
+        font-size: 16px;
+      }
+    }
+    
+    // responsive sale
+    .link-sale {
+      display: none;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      i {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+    .link-sale:nth-child(1) {
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
+    .link-sale:nth-child(2) {
+      @include media-breakpoint-between(md, lg) {
+        display: block;
+      }
+    }
+    .link-sale:nth-child(3) {
+      @include media-breakpoint-between(lg, xl) {
+        display: block;
+      }
+    }
+    .link-sale:nth-child(4) {
+      @include media-breakpoint-up(xl) {
+        display: block;
+      }
+    }
+
+    // 뒤에 두개만 색을 입히자
+    .menu__item:nth-child(4) a, .menu__item:nth-child(5) a {
+      color: $color_main_orange;
+    }
+  }
+}

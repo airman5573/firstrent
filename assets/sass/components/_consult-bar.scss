@@ -1,0 +1,60 @@
+.consult-bar {
+  display: flex;
+  height: $contact_bar_height;
+  width: 100%;
+  background-color: $color_fuscous_gray_approx;
+
+  // Common
+  img {
+    width: 100%;
+  }
+
+  // left, right layout
+  & > .left {
+    flex-grow: 1;
+  }
+  & > .right {
+    width: 560px;
+  }
+
+  // layout
+  .news-ticker {
+    &__icon-container {
+      @include center-child();
+      padding-left: 15px;
+      padding-right: 15px;
+      color: $color_main_orange;
+    }
+    display: flex;
+    ul {
+      flex-grow: 1;
+      font-size: 16px;
+      letter-spacing: 0;
+      white-space: nowrap;
+      // @include media-breakpoint-down(lg) {
+      //   font-size: 1.0rem;
+      // }
+    }
+  }
+
+  // news-ticker vertical slide animation
+  .news-ticker {
+    overflow: hidden;
+    height: 100%;
+    ul {
+      position: relative;
+      @include reset-ul();
+      li {
+        line-height: $contact_bar_height;
+        color: white;
+      }
+    }
+  }
+
+  // responsive layout
+  & > .right {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}
