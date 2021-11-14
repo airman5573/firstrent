@@ -31,7 +31,7 @@
           </div>
           <div class="mb-3">
             <label for="consult-location">지역</label>
-            <select id="consult-location" class="form-select" name="consult_location" required>
+            <select id="consult-location" class="form-select" name="consult_location">
               <option selected disabled value="">지역을 선택해주세요</option>
               <option value="서울">서울</option>
               <option value="경기">경기</option>
@@ -54,7 +54,7 @@
           </div>
           <div class="mb-3">
             <label for="consult-estimated-rental-fee">예상렌트료</label>
-            <select id="consult-estimated-rental-fee" class="form-select" name="consult_estimated_rental_fee" required>
+            <select id="consult-estimated-rental-fee" class="form-select" name="consult_estimated_rental_fee">
               <option selected disabled value="">예상렌트료를 선택해주세요</option>
               <option value="m35">35만원 미만</option>
               <option value="m45">35만원 ~ 45만원</option>
