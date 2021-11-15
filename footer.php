@@ -39,12 +39,6 @@ if (window.wcs) {
 </script>
 <!-- NAVER SCRIPT END -->
 
-<div class="kakao-desktop">
-  <a href="http://pf.kakao.com/_fgxgUs/chat">
-    <img src="http://firstrent.kr/wp-content/uploads/2021/11/kakao-consult.png" alt="">
-  </a>
-</div>
-
 <div class="phone-kakao-mobile">
   <div class="phone">
     <a href="tel:1800-1489" target="_blank">

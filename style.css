@@ -4914,7 +4914,7 @@ body > .wrapper > .main {
 
 .kakao-desktop {
   position: absolute;
-  right: 0;
+  right: -135px;
   top: 150px;
   background-color: green;
   z-index: 10001;
@@ -4926,7 +4926,7 @@ body > .wrapper > .main {
 .kakao-desktop a img {
   width: 100%;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .kakao-desktop {
     display: none;
   }
@@ -4968,13 +4968,13 @@ body > .wrapper > .main {
   letter-spacing: -1px;
   font-style: normal;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .phone-kakao-mobile {
     display: flex;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .footer {
     margin-bottom: 40px;
   }

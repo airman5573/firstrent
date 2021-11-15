@@ -1,6 +1,6 @@
 .kakao-desktop {
   position: absolute;
-  right: 0;
+  right: -135px;
   top: 150px;
   background-color: green;
   z-index: 10001;
@@ -12,7 +12,7 @@
     }
   }
   // Responsive
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     display: none;
   }
 }
@@ -53,13 +53,13 @@
   }
   background-color: $color-main-orange;
   // Responsive
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     display: flex;
   }
 }
 
 .footer {
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     margin-bottom: 40px;
   }
 }

@@ -134,6 +134,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div id="content" role="main">
-      <div class="wrapper"> <?php
+      <div class="wrapper">
+        <div class="kakao-desktop">
+          <a href="http://pf.kakao.com/_fgxgUs/chat" target="_blank">
+            <img src="http://firstrent.kr/wp-content/uploads/2021/11/kakao-consult.png" alt="">
+          </a>
+        </div>
+        <?php
         // drape
         echo get_template_part('partials/drape');
