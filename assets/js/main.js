@@ -207,4 +207,20 @@ jQuery(document).ready(function(){
   });
 })(jQuery);
 
+// 카카오톡 상담 박스 스크롤 따라 내려오도록
+(function($){
+  var scrollTimer;
+  const $link = $('.kakao-desktop');
+  const $window = $(window);
+  const initialLinkTop = parseInt(($link.css('top')).replace(/\D/g, "")); 
+  $window.scroll(function(){
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function(){
+      let windowScrollTop = $window.scrollTop();
+      $link.animate({
+        top: (initialLinkTop + windowScrollTop) + 'px'
+      }, 'slow');
+    }, 100);
+  });
+})(jQuery);
 });
