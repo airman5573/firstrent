@@ -55,7 +55,7 @@ if (window.wcs) {
     </a>
   </div>
   <div class="kakao">
-    <a href="" target="_blank">
+    <a href="http://pf.kakao.com/_fgxgUs/chat" target="_blank">
       <img src="http://firstrent.kr//wp-content/uploads/2021/11/icon-kakao.png" alt="">
       <em>
         카카오톡 상담
