@@ -4938,6 +4938,7 @@ body > .wrapper > .main {
   left: 0;
   right: 0;
   display: none;
+  z-index: 10001;
   background-color: #ff7d14;
 }
 .phone-kakao-mobile > div {
@@ -4973,6 +4974,12 @@ body > .wrapper > .main {
   }
 }
 
+@media (max-width: 991.98px) {
+  .footer {
+    margin-bottom: 40px;
+  }
+}
+
 #masthead {
   position: relative;
   z-index: 100;
@@ -4984,7 +4991,6 @@ body > .wrapper > .main {
   font-size: 12px;
   padding-top: 40px;
   padding-bottom: 40px;
-  margin-bottom: 40px;
   padding-left: 15px;
   padding-right: 15px;
 }

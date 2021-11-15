@@ -40,14 +40,14 @@ if (window.wcs) {
 <!-- NAVER SCRIPT END -->
 
 <div class="kakao-desktop">
-  <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko">
-    <img src="http://firstrent.kr//wp-content/uploads/2021/11/kakao-logo.png" alt="">
+  <a href="http://pf.kakao.com/_fgxgUs/chat">
+    <img src="http://firstrent.kr/wp-content/uploads/2021/11/kakao-consult.png" alt="">
   </a>
 </div>
 
 <div class="phone-kakao-mobile">
   <div class="phone">
-    <a href="" target="_blank">
+    <a href="tel:1800-1489" target="_blank">
       <img src="http://firstrent.kr//wp-content/uploads/2021/11/icon-phone.png" alt="">
       <em>
         전화상담

@@ -23,6 +23,7 @@
   left: 0;
   right: 0;
   display: none;
+  z-index: 10001;
   & > div {
     flex: 1;
   }
@@ -54,5 +55,11 @@
   // Responsive
   @include media-breakpoint-down(lg) {
     display: flex;
+  }
+}
+
+.footer {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
   }
 }
